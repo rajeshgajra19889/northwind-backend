@@ -1,6 +1,10 @@
 # Northwind Backend
 
 [![CI](https://github.com/rajeshgajra19889/northwind-backend/actions/workflows/ci.yml/badge.svg)](https://github.com/rajeshgajra19889/northwind-backend/actions/workflows/ci.yml)
+[![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)](https://nestjs.com)
+[![TypeORM](https://img.shields.io/badge/TypeORM-262627?style=flat-square&logo=typeorm&logoColor=white)](https://typeorm.io)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org)
+[![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org)
 
 NestJS + TypeORM REST API for the Northwind admin app. Sits on a PostgreSQL copy of the Northwind sample database.
 
