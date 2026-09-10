@@ -4,6 +4,10 @@
 
 NestJS + TypeORM REST API for the Northwind admin app. Sits on a PostgreSQL copy of the Northwind sample database.
 
+## Live API
+
+https://northwind-backend-ykt7.onrender.com/suppliers
+
 ## Setup
 
 ```bash
