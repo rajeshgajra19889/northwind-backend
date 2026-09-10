@@ -1,5 +1,7 @@
 # Northwind Backend
 
+[![CI](https://github.com/rajeshgajra19889/northwind-backend/actions/workflows/ci.yml/badge.svg)](https://github.com/rajeshgajra19889/northwind-backend/actions/workflows/ci.yml)
+
 NestJS + TypeORM REST API for the Northwind admin app. Sits on a PostgreSQL copy of the Northwind sample database.
 
 ## Setup
