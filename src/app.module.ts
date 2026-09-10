@@ -12,6 +12,7 @@ import { RegionModule } from './regions/regions.module.js';
 import { TerritoryModule } from './territories/territories.module.js';
 import { ShipperModule } from './shippers/shippers.module.js';
 import { DashboardModule } from './dashboard/dashboard.module.js';
+import { DatabaseSeeder } from './database-seeder.js';
 
 @Module({
   imports: [
@@ -43,5 +44,6 @@ import { DashboardModule } from './dashboard/dashboard.module.js';
     ShipperModule,
     DashboardModule
   ],
+  providers: [DatabaseSeeder],
 })
 export class AppModule { }

@@ -1,0 +1,39 @@
+databases:
+  - name: northwind-db
+    databaseName: northwind
+    user: northwind
+    plan: free
+
+services:
+  - type: web
+    name: northwind-backend
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start:prod
+    healthCheckPath: /suppliers?pageSize=1
+    envVars:
+      - key: NODE_VERSION
+        value: 24
+      - key: DB_HOST
+        fromDatabase:
+          name: northwind-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: northwind-db
+          property: port
+      - key: DB_USERNAME
+        fromDatabase:
+          name: northwind-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: northwind-db
+          property: password
+      - key: DB_NAME
+        fromDatabase:
+          name: northwind-db
+          property: database
+      - key: CORS_ORIGIN
+        value: http://localhost:4200
