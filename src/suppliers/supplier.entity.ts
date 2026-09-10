@@ -1,9 +1,9 @@
-import { Entity, PrimaryColumn, Column } from 'typeorm';
+import { Entity, Column } from 'typeorm';
 
-@Entity('customers')
-export class Customer {
-  @PrimaryColumn({ name: 'customer_id', length: 5 })
-  customerId: string;
+@Entity('suppliers')
+export class Supplier {
+  @Column({ name: 'supplier_id', primary: true, type: 'smallint' })
+  supplierId: number;
 
   @Column({ name: 'company_name', length: 40 })
   companyName: string;
@@ -34,4 +34,7 @@ export class Customer {
 
   @Column({ name: 'fax', length: 24, nullable: true })
   fax: string;
+
+  @Column({ name: 'homepage', type: 'text', nullable: true })
+  homepage: string;
 }
